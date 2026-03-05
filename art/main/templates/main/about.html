@@ -1,0 +1,29 @@
+{% extends "main/layout.html" %}
+<h1>About</h1>
+
+
+{% block title %}About Page{% endblock %}
+
+{% block content %}
+    <h1>About Page</h1>
+    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
+    {% include 'main/test2.html' %}
+
+{% endblock %}
+
+
+{% block basic %}
+    <h1>About Page</h1>
+{{arts }}
+     {% for art in arts %}
+        <h2>{{ art.title }}</h2>
+        <h4>{{ art.input }}</h4>
+        <p>{{ art.date }}</p>
+     {% endfor %}
+
+    <h1>Hello</h1>
+{{ debug}}
+{% endblock %}
+
+
+

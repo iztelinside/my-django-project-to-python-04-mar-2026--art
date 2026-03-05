@@ -1,0 +1,40 @@
+{% extends "main/layout.html" %}
+
+
+
+{% block title %}News Page{% endblock %}
+
+{% block content %}
+    <h1>News Page</h1>
+
+    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
+    {% include 'main/test2.html' %}
+{% endblock %}
+
+{% block basic %}
+<h1>News</h1>
+ <div class ="alert alert-warning">
+
+ {% if arts %}
+
+     {% for art in arts %}
+     <div class="basic">
+         <div class="basic__title">
+              <h2>{{ art.title }}</h2>
+         </div>
+         <div class="basic__input">
+               <h4>{{ art.input }}</h4>
+         </div>
+         <div class="basic__content">
+              <p>{{ art.content }}</p>
+         </div>
+     </div>
+
+
+     {% endfor %}
+{% else %}
+    <p>You have not arts</p>
+{% endif %}
+ </div>
+{% endblock %}
+
