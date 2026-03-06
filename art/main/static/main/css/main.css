@@ -14,6 +14,21 @@ header{
 
 
 }
+ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+.form-control{
+    width: 400px;
+}
+form:{
+    margin-top: 50px;
+    width: 500px;
+    margin-left: 30%;
+
+}
 .basic{
     display: block;
     border: solid 1px blue;
@@ -52,6 +67,7 @@ header{
     display: grid;
     width: 20%;
     background: #d5d8ff;
+    list-style: none;
 
     height: 80vh;
 

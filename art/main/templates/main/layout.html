@@ -9,23 +9,29 @@
         {% block title %}
         {% endblock%}
     </title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="  https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"-->
+<!--          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
     <link rel="stylesheet" href="static/main/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
-<header><h1>Main Page2</h1></header>
+<header><h1>Main Page2!</h1></header>
 <div class="main">
     <div class="main__left">
         <div class="main__left_logo">
             <img src="{% static 'main/img/house-regular.svg' %}" alt="">
         </div>
-        <div class="main__lest_list">
+        <div class="main__left_list">
             <ul>
-                <li><a href = " {% url 'home' %} ">Main</a></li>
-                <li><a href = " {% url 'about' %} ">About Us</a></li>
-                <li><a href = " {% url 'news' %} ">NewS</a></li>
+                <li><a href = " {% url 'home' %} "><i class="fa-solid fa-user"></i>Main</a></li>
+                <li><a href = " {% url 'about' %} "><i class="fa-solid fa-house"></i>About Us</a></li>
+                <li><a href = " {% url 'news' %} "><i class="fa-solid fa-heart"></i>NewS</a></li>
+                <li><a href = "  "><i class="fa-solid fa-plane"></i>Contacts</a></li>
+                <li><a href = " {% url 'create' %} "><button class="btn btn-info"><i class="fa-solid fa-trash"></i>  Create Form</button></a></li>
             </ul>
         </div>
         <div class="main__left_content">

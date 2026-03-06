@@ -1,4 +1,6 @@
 from django.shortcuts import render
+
+from .forms import ArtForm
 from .models import Art
 
 # Create your views here.
@@ -10,10 +12,12 @@ def news(request):
         "debug": "VIEW IS WORKING"
     })
 
+def create(request):
+    form = ArtForm(request.POST or None)
+    data = {
+        "form": form,
+    }
+    return render(request, "news/create.html", data)
 
-# def news(request):
-#     arts = Art.objects.all()
-#     return render(request, "news/news.html", {
-#         "arts": arts,
-#         "test": "WORKING"
-#     })
+
+
