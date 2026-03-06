@@ -1,9 +1,13 @@
 from django.shortcuts import render, redirect
+from django.views.generic.detail import DetailView
 
 from .forms import ArtForm
 from .models import Art
 
-# Create your views here.
+class NewsDetailView(DetailView):
+    model = Art
+    template_name = "news/details.html"
+    context_object_name = "article"
 
 def news(request):
     arts = Art.objects.order_by("title")

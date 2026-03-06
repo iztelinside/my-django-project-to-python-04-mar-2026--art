@@ -1,0 +1,22 @@
+{% extends "main/layout.html" %}
+
+
+{% block title %}News Page{% endblock %}
+
+{% block content %}
+    <h1>News Page</h1>
+
+    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
+    {% include 'main/test2.html' %}
+{% endblock %}
+
+{% block basic %}
+     <h1>Artciles</h1>
+     <div class="basic">
+
+        <h1>{{article.title}}</h1>
+        <h4>{{article.content}}</h4>
+
+     </div>
+
+{% endblock %}

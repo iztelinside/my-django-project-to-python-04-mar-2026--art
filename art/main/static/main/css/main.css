@@ -23,40 +23,58 @@ li{
 .form-control{
     width: 400px;
 }
-form:{
+.form{
     margin-top: 50px;
     width: 500px;
     margin-left: 30%;
+    align-items: center;
+    justify-content: center;
 
 }
 .alert{
+    display: grid;
+    align-items: center;
+    justify-content: center;
 
     background: rgba(0,0,0,0.7);
-    height:60%;
-}
-.basic{
-    display: block;
-    border: solid 1px blue;
-    margin-bottom: 20px;
+    margin-top: 20px;
+ }
+ .alert-warning{
+    display: grid;
     margin-top: 20px;
     background-color: #a86800;
-    width:80%;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    margin-bottom: 20px;
     margin-top: 20px;
+ }
+ .btn-warning{
+    position: relative;
+    display: grid;
+    margin-top: 20px;
+    background-color: #a86800;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 120px;
+ }
+.basic{
+    display: grid;
+    margin-top: 20px;
+    background-color: #a86800;
+    align-items: center;
+    justify-content: center;
+    margin 0 auto;
 }
+
 .main__basic{
     width: 60%;
-    background: rgba(0,0,0,0);
     display: grid;
+    background: rgba(0,0,0,0);
     text-align: center;
-    margin: 0 auto;
-    align-items: center;
     justify-content: center;
-    height: 80vh;
-
+    margin-top: 20px;
+    align-items: center;
+    margin 0 auto;
 }
 
 .main{
