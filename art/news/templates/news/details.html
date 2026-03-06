@@ -16,6 +16,8 @@
 
         <h1>{{article.title}}</h1>
         <h4>{{article.content}}</h4>
+        <a href="{% url 'update' article.id %}" class="btn btn-danger">Update</a>
+        <a href="{% url 'delete' article.id %}" class="btn btn-danger">Delete</a>
 
      </div>
 

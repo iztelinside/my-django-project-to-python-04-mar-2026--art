@@ -1,0 +1,22 @@
+{% extends "main/layout.html" %}
+
+
+
+{% block title %}Create Page{% endblock %}
+
+{% block content %}
+    <h1>Delete Page</h1>
+
+    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
+    {% include 'main/test2.html' %}
+{% endblock %}
+
+{% block basic %}
+ <div class ="create">
+     <form method="POST">
+        {% csrf_token %}
+        <button type="submit">Delete</button>
+     </form>
+
+ </div>
+{% endblock %}
