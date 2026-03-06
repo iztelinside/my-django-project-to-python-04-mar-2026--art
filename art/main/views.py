@@ -10,5 +10,5 @@ def about(request):
     return render(request, "main/about.html")
 
 def news(request):
-        return render(request, "news/news.html", {"text2":"News Page"})
+    return render(request, "news/news.html", {"text2":"News Page"})
 

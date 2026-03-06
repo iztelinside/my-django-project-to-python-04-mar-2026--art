@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 from .forms import ArtForm
 from .models import Art
@@ -12,12 +12,28 @@ def news(request):
         "debug": "VIEW IS WORKING"
     })
 
+
 def create(request):
-    form = ArtForm(request.POST or None)
+    error = ""
+
+    if request.method == "POST":
+        form = ArtForm(request.POST)
+
+        if form.is_valid():
+            form.save()
+            return redirect('news')   # имя url
+        else:
+            error = "Форма неверная"
+
+    form = ArtForm()
+
     data = {
         "form": form,
+        "error": error
     }
+
     return render(request, "news/create.html", data)
+
 
 
 

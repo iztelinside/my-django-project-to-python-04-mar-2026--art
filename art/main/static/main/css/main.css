@@ -29,38 +29,39 @@ form:{
     margin-left: 30%;
 
 }
+.alert{
+
+    background: rgba(0,0,0,0.7);
+    height:60%;
+}
 .basic{
     display: block;
     border: solid 1px blue;
     margin-bottom: 20px;
     margin-top: 20px;
     background-color: #a86800;
-
-}
-.main__basic{
-    display: grid;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-
-
-
-}
-.alert-warning{
-    display: grid;
-    border: solid 1px black;
-    width: 70%;
+    width:80%;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     margin-bottom: 20px;
     margin-top: 20px;
-
-    color: white;
 }
+.main__basic{
+    width: 60%;
+    background: rgba(0,0,0,0);
+    display: grid;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+
+}
+
 .main{
     display: flex;
+    height: 100vh;
 
 }
 .main__left{
@@ -69,7 +70,7 @@ form:{
     background: #d5d8ff;
     list-style: none;
 
-    height: 80vh;
+    height: 100%;
 
 }
 .main__basic{
@@ -78,9 +79,10 @@ form:{
 .main__right{
     width: 20%;
     background-color: yellow;
+    height: 100%;
 }
 
-footer{
+/*footer{
     background-color: #0032a0;
     position: absolute;
     left: 0;
@@ -91,7 +93,7 @@ footer{
     align-items: center;
     justify-content: center;
 
-}
+}*/
 
 
 .main__left_logo{

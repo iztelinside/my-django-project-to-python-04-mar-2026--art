@@ -12,20 +12,15 @@
 {% endblock %}
 
 {% block basic %}
-<h1>Create</h1>
  <div class ="create create-page">
-     {{form.title}}<br>
-     {{form.input}}<br>
-     {{form.content}}<br>
-     {{form.date}}<br>
-     <h1>----</h1>
-     <form method="post" class="form">
-          {% csrf_token %}
-         <input type="text" placeholder="Title Name" class="form-control"><br>
-         <input type="text" placeholder="Input Name" class="form-control"><br>
-         <textarea type="text" placeholder="Content Name" class="form-control"></textarea><br>
-         <input type="date" class="form-control"><br>
-         <button class="btn btn-info">Add Form</button>
+     <form method="POST">
+        {% csrf_token %}
+        {{form.title}}<br>
+        {{form.input}}<br>
+        {{form.content}}<br>
+        {{form.date}}<br>
+        {{form.error}}
+        <button type="submit">Redirect</button>
      </form>
 
  </div>

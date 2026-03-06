@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
                 ('title', models.CharField(max_length=100, verbose_name='Art Name')),
                 ('content', models.TextField(verbose_name='Art Content')),
                 ('input', models.TextField(verbose_name='Art Input')),
-                ('date', models.DateTimeField(verbose_name='Art Date')),
+                ('date', models.TimeField(verbose_name='Art Time')),
             ],
         ),
     ]

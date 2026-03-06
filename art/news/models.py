@@ -6,9 +6,10 @@ class Art(models.Model):
     content = models.TextField("Art Content")
     input = models.TextField("Art Input")
     date = models.DateTimeField("Art Date")
-
     def __str__(self):
-        return f"{self.title}"
+        return self.title
+
+
     class Meta:
         verbose_name = "Art"
         verbose_name_plural = "Arts"
